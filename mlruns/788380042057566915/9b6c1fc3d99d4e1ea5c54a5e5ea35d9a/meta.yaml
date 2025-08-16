@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Cyber%20Defense/Desktop/week5/credit-risk-model/mlruns/788380042057566915/9b6c1fc3d99d4e1ea5c54a5e5ea35d9a/artifacts
+end_time: 1751374056987
+entry_point_name: ''
+experiment_id: '788380042057566915'
+lifecycle_stage: active
+run_id: 9b6c1fc3d99d4e1ea5c54a5e5ea35d9a
+run_name: GradientBoosting
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751373995766
+status: 3
+tags: []
+user_id: Cyber Defense
