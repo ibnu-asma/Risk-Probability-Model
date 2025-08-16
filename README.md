@@ -4,9 +4,35 @@ This project aims to build and serve a machine learning model to predict credit 
 
 ## Credit Scoring Business Understanding
 
-Basel II's emphasis on robust risk measurement has significantly influenced the financial industry's preference for interpretable models. Regulatory requirements mandate that financial institutions not only produce accurate risk assessments but also understand and explain the factors driving those predictions. This has led to the widespread adoption of models like Logistic Regression with Weight of Evidence (WoE), which provide clear, monotonic relationships between input features and the predicted outcome. While more complex models like Gradient Boosting may offer higher predictive accuracy, their "black box" nature often makes them unsuitable for regulated environments where model transparency is paramount.
+The Basel II accord requires financial institutions to maintain minimum capital reserves to cover credit risk, encouraging the use of internal models for risk assessment [1]. This regulatory framework emphasizes the need for interpretable models, as banks must be able to explain the factors driving their risk predictions to regulators [5]. Consequently, models like Logistic Regression with Weight of Evidence (WoE), which offer transparency and clear relationships between features and outcomes, have been widely adopted in the financial industry [7].
 
-In the absence of a direct default label, a proxy variable is often necessary to train a credit risk model. For instance, a combination of late payments, high utilization, and low frequency of transactions could be used to define a "high-risk" customer. However, this approach introduces business risks. The proxy may not accurately capture the true definition of default, leading to a model that is optimized for the wrong target. This could result in either overly conservative lending, where creditworthy customers are denied, or overly aggressive lending, where the institution is exposed to unforeseen losses. The trade-offs between model interpretability and predictive power are a central theme in this project. While Logistic Regression with WoE offers a clear and easily explainable model, it may not capture the complex, non-linear relationships that a Gradient Boosting model can. The choice between these two approaches depends on the specific business context, the regulatory environment, and the risk appetite of the institution.
+In situations where a direct default label is unavailable, a proxy variable must be engineered from alternative data sources [1]. For example, a "high-risk" customer could be identified by a combination of factors such as payment history, transaction data, and even digital footprint [3, 4]. However, using a proxy variable introduces business risks. If the proxy does not accurately represent true default behavior, the resulting model may be flawed, leading to either overly restrictive lending or excessive risk exposure.
+
+This project explores the trade-off between model interpretability and predictive accuracy. While Logistic Regression with WoE provides a transparent and easily explainable model, it may not capture the complex, non-linear patterns that a Gradient Boosting model can [10]. The choice between these models is a critical business decision that depends on regulatory requirements, the institution's risk tolerance, and the availability of data. Recent advancements in Explainable AI (XAI), such as SHAP and LIME, are helping to bridge this gap by providing methods to interpret "black-box" models like Gradient Boosting, potentially allowing for both high accuracy and transparency [9, 11].
+
+### References
+
+[1] Basel Committee on Banking Supervision. (2006). *International Convergence of Capital Measurement and Capital Standards: A Revised Framework*. Bank for International Settlements.
+
+[2] BIS (2005). *An Explanatory Note on the Basel II IRB Risk Weight Functions*. Available at: https://www.bis.org/bcbs/irbriskweight.htm
+
+[3] Plaid (2023). *Alternative data for lending*. Available at: https://plaid.com/resources/lending/alternative-data-for-lending/
+
+[4] FICO (2022). *The Future of Credit Scoring: AI, Alternative Data, and the Future of Fair Lending*. Available at: https://www.fico.com/blogs/future-credit-scoring-ai-alternative-data-and-future-fair-lending
+
+[5] Finalyse (2022). *Model risk management under the new EBA guidelines*. Available at: https://www.finalyse.com/model-risk-management-under-the-new-eba-guidelines
+
+[6] Siddiqi, N. (2017). *Credit Risk Scorecards: Developing and Implementing Intelligent Credit Scoring*. John Wiley & Sons.
+
+[7] Thomas, L. C., Edelman, D. B., & Crook, J. N. (2002). *Credit Scoring and Its Applications*. SIAM.
+
+[8] Finlay, S. (2012). *Credit Scoring, Response Modeling, and Insurance Rating: A Practical Guide to Forecasting Consumer Behavior*. Palgrave Macmillan.
+
+[9] Lundberg, S. M., & Lee, S.-I. (2017). *A Unified Approach to Interpreting Model Predictions*. In Advances in Neural Information Processing Systems 30 (pp. 4765–4774).
+
+[10] Chen, T., & Guestrin, C. (2016). *XGBoost: A Scalable Tree Boosting System*. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 785–794).
+
+[11] Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). *"Why Should I Trust You?": Explaining the Predictions of Any Classifier*. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 1135–1144).
 
 ## Project Structure
 

@@ -22,7 +22,7 @@ gemini -p "Do you want to proceed to Task 1: Understanding Credit Risk? (Type 'y
 
 Task 1: Understanding Credit Risk
 Goal: Create the “Credit Scoring Business Understanding” section in README.md.Prompt:
-gemini -p "Generate a markdown file for README.md with a section titled 'Credit Scoring Business Understanding' (300 words) answering: 1) How does Basel II’s emphasis on risk measurement influence interpretable models? 2) Why is a proxy variable necessary without a default label, and what are the business risks? 3) Trade-offs between Logistic Regression with WoE and Gradient Boosting in a regulated financial context. Include a project structure section listing all directories and files." > README.md
+gemini -p "Generate a markdown file for README.md with a section titled 'Credit Scoring Business Understanding' (300 words) answering: 1) How does Basel II’s emphasis on risk measurement influence interpretable models? 2) Why is a proxy variable necessary without a default label, and what are the business risks? 3) Trade-offs between Logistic Regression with WoE and Gradient Boosting in a regulated financial context. Use references: https://www3.stat.sinica.edu.tw/statistica/oldpdf/A28n535.pdf, https://www.hkma.gov.hk/media/eng/doc/key-functions/financial-infrastructure/alternative_credit_scoring.pdf, https://thedocs.worldbank.org/en/doc/935891585869698451-0130022020/original/CREDITSCORINGAPPROACHESGUIDELINESFINALWEB.pdf, https://towardsdatascience.com/how-to-develop-a-credit-risk-model-and-scorecard-91335fc01f03, https://corporatefinanceinstitute.com/resources/commercial-lending/credit-risk/, https://www.risk-officer.com/Credit_Risk.htm. Include a project structure section listing all directories and files." > README.md
 
 Output Handling:
 
