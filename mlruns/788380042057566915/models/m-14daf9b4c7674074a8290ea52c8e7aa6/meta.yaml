@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Cyber%20Defense/Desktop/week5/credit-risk-model/mlruns/788380042057566915/models/m-14daf9b4c7674074a8290ea52c8e7aa6/artifacts
+creation_timestamp: 1751373102162
+experiment_id: '788380042057566915'
+last_updated_timestamp: 1751373110558
+model_id: m-14daf9b4c7674074a8290ea52c8e7aa6
+model_type: null
+name: model
+source_run_id: 93944dd4f66d4570b9a1c0933062a0ac
+status: 2
+status_message: null

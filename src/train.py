@@ -90,6 +90,12 @@ def train_and_evaluate(df):
 
             # Log model
             mlflow.sklearn.log_model(best_model, "model")
+
+            # Export the best model for deployment
+            import joblib
+            model_export_path = "C:/Users/Cyber Defense/Desktop/week5/credit-risk-model/models/gradient_boosting_model.pkl"
+            joblib.dump(best_model, model_export_path)
+            logging.info(f"Best Gradient Boosting model exported to {model_export_path}")
             
             logging.info(f"{model_name} ROC-AUC: {roc_auc:.4f}")
 
