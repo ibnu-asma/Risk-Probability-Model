@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Cyber%20Defense/Desktop/week5/credit-risk-model/mlruns/788380042057566915/models/m-49de689945ec43288e93250e225571f6/artifacts
+creation_timestamp: 1751369509627
+experiment_id: '788380042057566915'
+last_updated_timestamp: 1751369514827
+model_id: m-49de689945ec43288e93250e225571f6
+model_type: null
+name: GradientBoosting
+source_run_id: 6b08110e9b2245259c68f3831af9a6fc
+status: 2
+status_message: null
