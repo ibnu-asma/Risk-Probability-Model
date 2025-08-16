@@ -1,14 +1,42 @@
 # Credit Risk Model
 
-This project aims to build and serve a machine learning model to predict credit risk. The model will be trained on historical data to identify patterns and predict the likelihood of a borrower defaulting on a loan.
+## Project Objective
+
+This project aims to develop a robust credit risk model using alternative data from the Xente platform. 
+
+The primary goal is to predict the likelihood of a customer being high-risk, enabling more informed lending decisions. 
+The project will explore the trade-offs between traditional interpretable models, such as Logistic Regression with Weight of Evidence (WoE),
+and more complex, high-performance models like Gradient Boosting. By leveraging machine learning, this project seeks to improve financial 
+inclusion by providing a more accurate and equitable way to assess credit risk for individuals who may not have a traditional credit history.
+
+## Dataset
+
+This project uses the Xente Customer Transaction Data, which can be downloaded from Kaggle. 
+You can find the dataset at the following URL: [https://www.kaggle.com/datasets/infinix-mobility-uganda/xente-fraud-detection-challenge]
+(https://www.kaggle.com/datasets/infinix-mobility-uganda/xente-fraud-detection-challenge)
+
+Please download the dataset and place the `xente.csv` file in the `data/raw` directory.
+
 
 ## Credit Scoring Business Understanding
 
-The Basel II accord requires financial institutions to maintain minimum capital reserves to cover credit risk, encouraging the use of internal models for risk assessment [1]. This regulatory framework emphasizes the need for interpretable models, as banks must be able to explain the factors driving their risk predictions to regulators [5]. Consequently, models like Logistic Regression with Weight of Evidence (WoE), which offer transparency and clear relationships between features and outcomes, have been widely adopted in the financial industry [7].
+The Basel II accord requires financial institutions to maintain minimum capital reserves to cover credit risk, encouraging the use of internal models for risk assessment [1]. 
+This regulatory framework emphasizes the need for interpretable models, as banks must be able to explain the factors driving their risk predictions to regulators [5]. 
+Consequently, models like Logistic Regression with Weight of Evidence (WoE), which offer transparency and clear relationships between features and outcomes, 
+have been widely adopted in the financial industry [7].
 
-In situations where a direct default label is unavailable, a proxy variable must be engineered from alternative data sources [1]. For example, a "high-risk" customer could be identified by a combination of factors such as payment history, transaction data, and even digital footprint [3, 4]. However, using a proxy variable introduces business risks. If the proxy does not accurately represent true default behavior, the resulting model may be flawed, leading to either overly restrictive lending or excessive risk exposure.
+In situations where a direct default label is unavailable, a proxy variable must be engineered from alternative data sources [1]. 
+For example, a "high-risk" customer could be identified by a combination of factors such as payment history, transaction data, 
+and even digital footprint [3, 4]. However, using a proxy variable introduces business risks. If the proxy does not accurately represent true default behavior, 
+the resulting model may be flawed, leading to either overly restrictive lending or excessive risk exposure.
 
-This project explores the trade-off between model interpretability and predictive accuracy. While Logistic Regression with WoE provides a transparent and easily explainable model, it may not capture the complex, non-linear patterns that a Gradient Boosting model can [10]. The choice between these models is a critical business decision that depends on regulatory requirements, the institution's risk tolerance, and the availability of data. Recent advancements in Explainable AI (XAI), such as SHAP and LIME, are helping to bridge this gap by providing methods to interpret "black-box" models like Gradient Boosting, potentially allowing for both high accuracy and transparency [9, 11].
+This project explores the trade-off between model interpretability and predictive accuracy. While Logistic Regression with WoE provides a transparent and 
+easily explainable model, it may not capture the complex, non-linear patterns that a Gradient Boosting model can [10].
+
+ The choice between these models is a critical business decision that depends on regulatory requirements, 
+ the institution's risk tolerance, and the availability of data. Recent advancements in Explainable AI (XAI), 
+ such as SHAP and LIME, are helping to bridge this gap by providing methods to interpret "black-box" models like Gradient Boosting, 
+ potentially allowing for both high accuracy and transparency [9, 11].
 
 ### References
 
