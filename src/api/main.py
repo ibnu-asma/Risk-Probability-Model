@@ -1,6 +1,6 @@
 
 from fastapi import FastAPI
-import mlflow
+import joblib
 import pandas as pd
 from src.api.pydantic_models import CreditRiskInput, CreditRiskOutput
 import logging
@@ -11,8 +11,8 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 app = FastAPI()
 
 # Load the model at startup
-logged_model = '/app/mlruns/788380042057566915/4bdb10531f4f498eb09695ae774fd8b7/artifacts/GradientBoosting'
-model = mlflow.pyfunc.load_model(logged_model)
+model_path = "/app/models/gradient_boosting_model.pkl"
+model = joblib.load(model_path)
 
 @app.post("/predict", response_model=CreditRiskOutput)
 def predict(input_data: CreditRiskInput):
