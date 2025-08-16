@@ -1,6 +1,6 @@
 # Credit Risk Model
 
-**✅ All project tasks are complete. The API is fully functional and ready for use.**
+
 
 
 
