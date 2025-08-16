@@ -89,7 +89,7 @@ def train_and_evaluate(df):
             mlflow.log_metric("roc_auc", roc_auc)
 
             # Log model
-            mlflow.sklearn.log_model(best_model, "GradientBoosting_model")
+            mlflow.sklearn.log_model(best_model, "model")
             
             logging.info(f"{model_name} ROC-AUC: {roc_auc:.4f}")
 
