@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Cyber%20Defense/Desktop/week5/credit-risk-model/mlruns/788380042057566915/93944dd4f66d4570b9a1c0933062a0ac/artifacts
+end_time: 1751373110596
+entry_point_name: ''
+experiment_id: '788380042057566915'
+lifecycle_stage: active
+run_id: 93944dd4f66d4570b9a1c0933062a0ac
+run_name: LogisticRegression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751373074591
+status: 4
+tags: []
+user_id: Cyber Defense
