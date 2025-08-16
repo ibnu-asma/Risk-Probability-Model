@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/Cyber%20Defense/Desktop/week5/credit-risk-model/mlruns/788380042057566915/models/m-49de689945ec43288e93250e225571f6/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.8
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+mlflow_version: 3.1.1
+model_id: m-49de689945ec43288e93250e225571f6
+model_size_bytes: 288982
+model_uuid: m-49de689945ec43288e93250e225571f6
+prompts: null
+run_id: 6b08110e9b2245259c68f3831af9a6fc
+utc_time_created: '2025-07-01 11:31:49.860438'

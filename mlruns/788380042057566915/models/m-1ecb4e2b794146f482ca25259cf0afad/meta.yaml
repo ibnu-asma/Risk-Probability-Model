@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Cyber%20Defense/Desktop/week5/credit-risk-model/mlruns/788380042057566915/models/m-1ecb4e2b794146f482ca25259cf0afad/artifacts
+creation_timestamp: 1751361171906
+experiment_id: '788380042057566915'
+last_updated_timestamp: 1751361180713
+model_id: m-1ecb4e2b794146f482ca25259cf0afad
+model_type: null
+name: LogisticRegression
+source_run_id: 111086e87f0f4e3685d6d89b9e3b8d40
+status: 2
+status_message: null
