@@ -1,5 +1,9 @@
 # Credit Risk Model
 
+**✅ All project tasks are complete. The API is fully functional and ready for use.**
+
+
+
 ## Project Objective
 
 This project aims to develop a robust credit risk model using alternative data from the Xente platform. 
@@ -15,7 +19,7 @@ This project uses the Xente Customer Transaction Data, which can be downloaded f
 You can find the dataset at the following URL: [https://www.kaggle.com/datasets/infinix-mobility-uganda/xente-fraud-detection-challenge]
 (https://www.kaggle.com/datasets/infinix-mobility-uganda/xente-fraud-detection-challenge)
 
-Please download the dataset and place the `xente.csv` file in the `data/raw` directory.
+Please download the dataset and place the `data.csv` file in the `data/raw` directory.
 
 
 ## Credit Scoring Business Understanding
@@ -50,17 +54,6 @@ easily explainable model, it may not capture the complex, non-linear patterns th
 
 [5] Finalyse (2022). *Model risk management under the new EBA guidelines*. Available at: https://www.finalyse.com/model-risk-management-under-the-new-eba-guidelines
 
-[6] Siddiqi, N. (2017). *Credit Risk Scorecards: Developing and Implementing Intelligent Credit Scoring*. John Wiley & Sons.
-
-[7] Thomas, L. C., Edelman, D. B., & Crook, J. N. (2002). *Credit Scoring and Its Applications*. SIAM.
-
-[8] Finlay, S. (2012). *Credit Scoring, Response Modeling, and Insurance Rating: A Practical Guide to Forecasting Consumer Behavior*. Palgrave Macmillan.
-
-[9] Lundberg, S. M., & Lee, S.-I. (2017). *A Unified Approach to Interpreting Model Predictions*. In Advances in Neural Information Processing Systems 30 (pp. 4765–4774).
-
-[10] Chen, T., & Guestrin, C. (2016). *XGBoost: A Scalable Tree Boosting System*. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 785–794).
-
-[11] Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). *"Why Should I Trust You?": Explaining the Predictions of Any Classifier*. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 1135–1144).
 
 ## Project Structure
 
@@ -135,6 +128,37 @@ The API will be available at `http://127.0.0.1:8000`.
 ### 4. Making Predictions
 
 You can send a POST request to the `/predict` endpoint with the required features to get a credit risk prediction.
+
+#### Example Input
+```json
+{
+  "ProductCategory": "airtime",
+  "ChannelId": "C123",
+  "Amount": 500,
+  "Value": 500,
+  "PricingStrategy": 1,
+  "FraudResult": 0,
+  "Amount_sum": 1500,
+  "Amount_mean": 375,
+  "Amount_std": 100,
+  "Amount_count": 4,
+  "TransactionId_count": 2,
+  "hour": 13,
+  "day": 15,
+  "month": 6,
+  "year": 2024,
+  "day_of_week": 2
+}
+```
+
+#### Example Output
+```json
+{
+  "risk_probability": 0.12345
+}
+```
+
+You can also test the API interactively at [http://localhost:8000/docs](http://localhost:8000/docs) after starting the server.
 
 ## Testing
 
